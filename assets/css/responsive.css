@@ -1,0 +1,89 @@
+@media all and (max-width: 940px){
+	#services .service-list .service-item{ /*punem si #services pentru catrebuie sa specificam mai exact sau cel putin la fel de exact ca in momentulunde am configurat primadata casa putem schimba ceva*/ 
+ 		float: none;						
+ 		display: block;
+ 		width: 40%;
+ 		margin: 0 10px 40px 10px; 
+ 	}
+
+ 	section h3{
+ 		margin-top: 60px;
+ 	}	
+ 	section h4{
+ 		margin-bottom: 40px;
+ 	}
+ 	#portofolio .portofolio-list {
+		padding: 0 10px;/*padding-ul se adauga width-ului*/
+		box-sizing: border-box;
+		/*width: calc(100%-20px);=>metoda a 2 a*/
+ 	}
+ 	/* *{
+ 		box-sizing: border-box; =>de obiceise poatepune  petot site-ul
+ 		}
+ 	*/
+ 	#portofolio .portofolio-list .portofolio-item{
+ 		width: 47%;	
+ 		margin-right: 6%;
+ 	}
+ 	#portofolio .portofolio-list .portofolio-item:nth-child(3n){
+ 		margin-right: 6%;
+	}
+ 	#portofolio .portofolio-list .portofolio-item:nth-child(2n){
+ 		margin-right: 0;
+ 	}
+}
+@media all and (max-width: 550px){
+ 	#services .service-list .service-item{ /*punem si #services pentru catrebuie sa specificam mai exact sau cel putin la fel de exact ca in momentulunde am configurat primadata casa putem schimba ceva*/ 
+ 		float: none;						
+ 		display: block;
+ 		width: auto;
+ 		margin: 0 10px 40px 10px; 
+ 	}
+ 	section h3{
+ 		margin-top: 60px;
+ 	}	
+ 	section h4{
+ 		margin-bottom: 40px;
+ 	}
+ 	#portofolio .portofolio-list {
+		padding: 0 10px;/*padding-ul se adauga width-ului*/
+		box-sizing: border-box;
+		/*width: calc(100%-20px);=>metoda a 2 a*/
+ 	}
+ 	/* *{
+ 		box-sizing: border-box; =>de obiceise poatepune  petot site-ul
+ 		}
+ 	*/
+ 	#portofolio .portofolio-list .portofolio-item{
+ 		width: 47%;	
+ 		margin-right: 6%;
+ 	}
+ 	#portofolio .portofolio-list .portofolio-item:nth-child(3n){
+ 		margin-right: 6%;
+	}
+ 	#portofolio .portofolio-list .portofolio-item:nth-child(2n){
+ 		margin-right: 0;
+ 	}
+}
+@media all and(max-width: 720px ){
+	header h1{
+		font-size: 40px;
+	}
+	header .middle button{
+		font-size: 14px;
+		width: auto;
+		padding: 0 15px;
+		height: 40px;
+
+	}
+}
+/*sub background colorlaimagine pun background atachement='fix'=>nu aici,pentru a face ca imaginea sa mearga maiincet*/
+@media all and (max-width: 320px) {
+	#portofolio .portofolio-list .portofolio-item:nth-child(n){
+		width: 100%
+		margin-right: 0;
+	}
+	/*#portofolio .portofolio-list .portofolio-item:nth-child(3n){
+ 		margin-right: 0;
+	}*/
+}

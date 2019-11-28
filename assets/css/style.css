@@ -1,0 +1,351 @@
+/*GENERAL STYLES*/
+@import url('http://fonts.googleapis.com/css?family=Montserrat')
+@font-face{
+	font-family: "DroidSerif-Regular";
+	src: url("../fonts/DroidSerif-Regular.ttf");
+}
+@font-face{
+	font-family:"DroidSerif-Italic";
+	src: url("../fonts/DroidSerif-Italic.ttf");
+
+}
+@font-face{
+	font-family:"Montserrat-Bold";
+	src: url("../fonts/Montserrat-Bold.otff");
+
+}
+body{
+	margin: 0;
+	font-family: "DroidSerif";
+}
+section h3{
+	float:left;
+	width:100%;
+	text-align:center;
+	font-family:'Montserrat',sans-serif;
+	font-weight:bold;
+	font-size: 40px;
+	color:#333;
+	text-transform: uppercase;
+	margin-top: 120px;/*nu aivoie sa folosesti margin-topdincauza displaty:block*/;
+	margin-bottom: 0px;
+}
+
+section h4{
+	float:left;
+	width:100%;
+	text-align:center;
+	font-family: sans-serif;
+	font-size:16px;
+	color:#666;
+	font-style: italic;
+	margin-top: 24px;
+}
+.center{
+	width: 940px;
+	margin: 0 auto;
+}
+/*HEADER*/
+header{
+	width:100%;
+	height:100vh;/*inloc de 700px,am pus 100 vh sa fiedimensiunea100%din ecran*/
+	background-image: url("../img/poza2.jpg");
+}
+.button{
+	background-color:#fed136; 
+	font-family:"Montserrat-Bold", sans-serif;
+	color:white;
+	text-align: center;
+	font-size:18px;
+	border:none;
+	padding: 23px 61px;
+	border-radius: 4px;
+	color:#fff;
+	margin-top: 60px;
+	cursor: pointer;
+	transition: :color .2s,background-color .2s;
+}
+/*header .middle button{
+	background-color:#fed136; 
+	font-family:"Montserrat-Bold", sans-serif;
+	color:white;
+	text-align: center;
+	font-size:18px;
+	border:none;
+	padding: 23px 61px;
+	border-radius: 4px;
+	color:#fff;
+}
+*/
+header .middle button:hover{
+	color:#fed136;
+	background-color:#fff ;
+}
+}
+.button:hover{
+	color:#fed136;
+	background-color:#fff ;
+}
+
+.sticky-header .sticky-header
+ .center{
+	display:table;
+	height:100vh;
+	position:relative;
+}
+.sticky-header{
+	width: 100%;
+	position:fixed;
+	z-index: 1
+	background-color:rgba(0, 0, 0, 0.5);
+}
+
+.sticky-header
+ .logo{
+	position:absolute;
+	top:20px;
+	cursor:pointer;
+}
+.sticky-header .center{
+	position: relative;
+}
+.sticky-header
+ nav{
+	float: right;
+	position:absolute;
+	right:0;
+}
+.sticky-header
+ nav ul{
+	list-style:none;/*fara bulinuta neagra*/
+	padding:0;
+}
+.sticky-header
+ li{
+	float: left;
+}
+.sticky-header
+ nav li{
+float:left;
+margin-left:38px;
+}
+
+.sticky-header
+ nav a{
+	color: white;
+	font-size: 14px;
+	line-height:41px;
+	text-decoration: none;/*scoatelnia de dedesupt*/
+	font-family:"Montserrat", sans-serif;
+	padding: 3px 3px 3px 35px;
+	cursor:pointer;
+}
+.sticky-header
+ nav a span {
+	border-bottom: 2px solid transparent;
+	padding-bottom:5px;
+	transition: border .2s;
+}
+/*.sticky-header
+ nav a:hover span putem sa-l punem separat,dar daca le punem impreuna atuncicauta maiintai in aia siabiaapoiin clasa span*/
+.sticky-header
+ nav a:hover span,
+.sticky-header
+ nav.active span{
+	border-bottom: 2px solid #fed136;
+}
+
+header .middle{
+display:table-cell;
+width:100%;
+text-align: center;
+vertical-align: middle;
+}
+header h1{
+	color: white;
+	font-family:"Montserrat-Bold";
+	font-size:70px;
+	margin-bottom: 0px;
+}
+header h2{
+	color: white;
+	font-family: "DroidSerif-Italic";
+	font-size:40px;
+	font-weight: 100;
+}
+
+
+/*SECTION:SERVICES*/
+#services,
+#services .services-list{
+	float:left;
+	width: 100%;
+}
+#services .services-list .services-item {
+	width:30%;
+	margin-right:5%;
+	display:inline-block;
+	float:left;
+}
+#services .services-list .services-item:last-child{
+	margin-right:0;
+	}
+section#services .services-list .services-item .services-icon .fa span{
+	display:inline-table;
+	height: 66px;
+	width: 66px;
+}
+section#services .services-list .services-item .services-icon .fa {/*cu spatiu- cauta-mi toata sectiunile cu tag-urile   services*/ /* id-urilesuntunice,decipot renunta la"section*/
+color:#fed136;
+height: 66px;
+width: 66px;
+font-size: 35px;
+border: 3px solid #fed136;
+border-radius: 50%;
+text-align: center;
+display:table-cell;
+vertical-align: middle;
+}
+.services-center {
+	width: 30%;
+	margin: 0 auto;
+	text-align: center;
+}
+/*SECTION:PORTOFOLOIO*/
+#portofolio,
+#portofolio .portofolio-list{
+	float: left;
+	width: 100%
+}
+#portofolio .portofolio-list{
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+}
+#portofolio .portofolio-list .portofolio-item {
+	float:left;
+	width:30%;
+	margin-right:5%;
+	margin-bottom: 10px;
+	text-align: center;
+	transition: box-shadow .2s ease;
+}
+#portofolio .portofolio-list .portofolio-item:nth-child(3n){
+	margin-right: 0;
+}
+.portofolio-item a{
+	text-decoration: none;
+}
+.portofolio-item:hover{
+	box-shadow: 10px 10px 19px rgba(0, 0, 0, 0.13)
+}
+
+.portofolio-image{
+	margin:0;
+	width: 100%;
+	height:290px;
+	position:relative;
+	background-color: #000;
+	overflow: hidden;
+}
+.portofolio-image img{
+	width: 100%;
+	height: auto;
+	transition: opacity .3s ease, transform .3s ease;
+}
+.portofolio-image-text{
+	position: absolute;
+	top: 50%;
+	left:50%;
+	-webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.portofolio-image-text h6{
+	font-size:18px;
+	color: rgb(220, 173, 98);
+	font-family: 'Montserrat',sans-serif;
+	border:2px solid rgb(220, 173, 98);
+	display: none;
+	transition: display .3s;
+}
+.portofolio-item:hover .portofolio-image-text h6{
+	display:block;
+}
+.portofolio-item:hover .portofolio-image img{
+	opacity: 0.4;
+	-webkit-transform: scale(1.15);
+	-ms-transform: scale(1.15);
+	transform: scale(1.15);/*cu cat vrem sa se inmulteasca dimensiunile*/
+}
+/*runda1: Facem textul sa apara pe hover
+punem unfundal negru lapoza
+schimbam dimensiunile pozei*/
+/*SECTION: ABOUT US*/
+#about{
+	float: left;
+	width: 100%;
+	position: relative;
+}
+#about .line{
+	width: 2px;
+	height: 400px;
+	background-color: #f1f1f1;
+    float: left;
+    position: absolute;
+    left: 50%;
+    top: 314px;
+}
+#about .timeline{
+	list-style: none;
+	padding: 0;
+	width: 600px;
+	margin-top: 80px;
+	float: left;
+}
+#about .timeline > li{
+	float: left;
+	transform: translateX(5px);
+	margin-bottom: 92px;
+} 
+#about .timeline  > li .description{
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	color:#777;
+}
+#about .timeline  > li .description strong{
+	font-size: 18px;
+	color:#222;
+}
+#about .timeline > li:nth-child(even){
+	transform: translateX(380px);
+}
+#about .timeline > li:nth-child(even) .description{
+	float:right;
+}
+#about .timeline > li:nth-child(even) .figure{
+	float: left;
+	margin-right: 20px;
+}
+#about .timeline > li:nth-child(odd){
+	 text-align: right;
+}
+#about.timeline > li:nth-child(odd){
+	margin-left: 20px;
+}
+#about .timeline figure{
+	width: 166px;
+	height: 166px;
+	border-radius:50%;
+	overflow: hidden;/* acunde restul imagini care nuintra la border*/
+	border: solid 7px #f1f1f1;
+	float: right;
+	margin:0;
+}
+#about .timeline .description{
+float: left;
+width: 380px;
+}
+.fix-padding {
+	padding: 50px;
+}
